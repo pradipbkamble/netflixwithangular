@@ -1,0 +1,19 @@
+
+<div class="moviimgmain">
+    <!-- <div class="moviimgmain" 
+    [style.backgroundimg]="'linear-gradient(90deg,black,transparent),url('+ backgroundimg +')'"> -->
+        <img src="https://image.tmdb.org/t/p/original/{{moviobj.poster_path}}" class="imgmovi" alt="">
+        <div class="movi-caption">
+          <h3>
+            {{moviobj.title||moviobj.original_title }}
+          </h3>
+          <img src="https://image.tmdb.org/t/p/original/" alt="">
+          <p>
+
+          </p>
+          <p>{{moviobj.overview}}</p>
+          <p>{{moviobj.genre_ids}}</p>
+          <p>{{moviobj.popularity}}</p>
+          <p>{{moviobj.original_language}}</p>
+          </div>
+</div>

@@ -1,0 +1,26 @@
+
+  <div class="classss" >
+    <owl-carousel-o [options]="customOptions" >
+        <ng-template carouselSlide *ngFor="let movi of moviobj">
+        <div class="item animate_fadeIn">
+          <img src="https://image.tmdb.org/t/p/original/{{movi.poster_path}}" class="img-fluid" alt="">
+          <div class="container-fluid">
+          <div class="movi-caption">
+
+            <h3>
+              {{movi.title||movi.original_title }}
+            </h3>
+            <p>{{movi.overview}}</p>
+            <p>{{movi.genre_ids}}</p>
+            <p>{{movi.popularity}}</p>
+            <p>{{movi.original_language}}</p>
+            <button color="primary" mat-raised-button type="button" [routerLink]="['movies',movi.id]">show more</button>
+          </div>
+        </div>
+        </div>
+        </ng-template>  
+        
+      </owl-carousel-o>
+    
+</div>
+

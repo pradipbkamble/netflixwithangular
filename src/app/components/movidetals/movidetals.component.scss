@@ -1,0 +1,23 @@
+.moviimgmain{
+    .imgmovi{ width: 100%;
+    height: 1000px;
+    object-fit: cover;
+
+    }
+   
+    .movi-caption{
+        position:absolute;
+        top: 5%;
+        left: 5%;
+        height: 100%;
+        width: 40%;
+        background-image: linear-gradient(93deg,black,transperent 85%,transperent);
+        h3{
+            font-size: 65px !important;
+            color: aliceblue;
+        }
+                }
+
+
+    
+}

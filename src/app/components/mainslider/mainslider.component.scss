@@ -1,0 +1,45 @@
+::ng-deep{
+    .classss{
+        .owl-carousel{
+            .owl-item img {
+                height: 1000px;
+                width: 100%;
+                object-fit: cover;
+                
+            }
+            .owl-prev,.owl-next{
+                position: absolute;
+                top: 45%;
+                font-size: 25px;
+                background-color: black;
+                // :hover{
+                //     background-color: rgb(255, 0, 102) !important;
+                // }
+            }
+            .owl-prev{
+                        left: 20%;
+                }
+            .owl-next{
+               
+            right: 20%;
+
+            }
+        }
+        .movi-caption{
+position:absolute;
+top: 5%;
+left: 5%;
+height: 100%;
+width: 40%;
+background-image: linear-gradient(93deg,black,transperent 85%,transperent);
+h3{
+    font-size: 65px !important;
+    color: aliceblue;
+}
+        }
+               
+                            
+        } 
+        
+     }
+
