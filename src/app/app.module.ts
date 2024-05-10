@@ -7,16 +7,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { MainsliderComponent } from './components/mainslider/mainslider.component';
 import { MovidetalsComponent } from './components/movidetals/movidetals.component';
+
+
 import {HttpClientModule}  from '@angular/common/http'
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { movimodule } from './movimodule/movimodule.module';
+import { PictursComponent } from './components/picturs/picturs.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MainsliderComponent,
-    MovidetalsComponent
+    MovidetalsComponent,
+    PictursComponent,
+  
+
   ],
   imports: [
     BrowserModule,

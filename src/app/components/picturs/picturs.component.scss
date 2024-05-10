@@ -1,0 +1,85 @@
+.btn-red {
+    background-color: #e50914 !important;
+    background-image: linear-gradient(180deg,#e50914,#db0510)!important;
+    box-shadow: 0 1px 0 rgba(0,0,0,.45)!important;
+    color: #fff!important;
+}
+.btn {
+    background-color: #e6e6e6;
+    background-image: linear-gradient(180deg,#e6e6e6,#ddd);
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .0.08px;
+    line-height:10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align:middle;
+}
+::ng-deep{
+    .mainslider{
+        .owl-carousel {
+            .owl-item img{
+                height: 100vh;
+                // border: 5px solid pink;
+                    object-fit: cover;
+                    background-position: center;
+                    background-size: cover;
+                
+            }
+           
+
+            .owl-prev, 
+            .owl-next{
+                position: absolute;
+                top: 50%;
+                background-color: transparent !important;
+                color: #e5b509 !important;
+                font-size: 40px;
+            }
+            .owl-prev{
+                left: 3%;
+            }
+            .owl-next{
+                right: 3%;
+            }
+       
+        }
+        .movie-caption{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%;
+            background-image: linear-gradient(90deg, #181818 10%, hsla(0, 0%, 9%, .98) 20%, hsla(0, 0%, 9%, .97) 25%, hsla(0, 0%, 9%, .95) 35%, hsla(0, 0%, 9%, .94) 40%, hsla(0, 0%, 9%, .92) 45%, hsla(0, 0%, 9%, .9) 50%, hsla(0, 0%, 9%, .87) 55%, hsla(0, 0%, 9%, .82) 60%, hsla(0, 0%, 9%, .75) 65%, hsla(0, 0%, 9%, .63) 70%, hsla(0, 0%, 9%, .45) 75%, hsla(0, 0%, 9%, .27) 80%, hsla(0, 0%, 9%, .15) 85%, hsla(0, 0%, 9%, .08) 90%, hsla(0, 0%, 9%, .03) 95%, hsla(0, 0%, 9%, 0));
+            padding: 55px 0 0 40px;
+            line-height:10px;
+            
+            h3{
+                font-size: 64px !important;
+                color: #fff;
+                margin-bottom: 50px;
+                   line-height: 1;
+               
+            }
+            p{
+                color: #fff;
+                font-size: 20px;
+                   line-height: 1;
+              
+            }
+ }
+}
+}
+

@@ -1,13 +1,13 @@
 
-<div class="moviimgmain">
-    <!-- <div class="moviimgmain" 
-    [style.backgroundimg]="'linear-gradient(90deg,black,transparent),url('+ backgroundimg +')'"> -->
+<!-- <div class="moviimgmain">
+    <div class="moviimgmain" 
+    [style.backgroundimg]="'linear-gradient(90deg,black,transparent),url('+ backgroundimg +')'"> 
         <img src="https://image.tmdb.org/t/p/original/{{moviobj.poster_path}}" class="imgmovi" alt="">
         <div class="movi-caption">
           <h3>
             {{moviobj.title||moviobj.original_title }}
           </h3>
-          <img src="https://image.tmdb.org/t/p/original/" alt="">
+          <img src="https://image.tmdb.org/t/p/original/{{moviobj.backdrop_path}}" alt="">
           <p>
 
           </p>
@@ -16,4 +16,38 @@
           <p>{{moviobj.popularity}}</p>
           <p>{{moviobj.original_language}}</p>
           </div>
+</div> -->
+<div class="moviimgmain ">
+  <!-- <div class="moviimgmain" 
+      [style.backgroundimg]="'linear-gradient(90deg,black,transparent),url('+ backgroundimg +')'"> -->
+      <img src="https://image.tmdb.org/t/p/original/{{movieObj.backdrop_path || movieObj.poster_path}}" alt="" class="movieimg">
+      <div class="container-fluid">
+     <div class="row">
+       <div class="movie512">
+              <div class="col-md-5">
+              <div class="movieInfoCaption">
+                  <img src="https://image.tmdb.org/t/p/original/{{movieObj.production_companies[0].logo_path}}" alt="" class="movieProdLogo">
+                  <h3 class="movieTitle ">
+                      {{movieObj.title ?? movieObj.original_title}}
+                  </h3>
+                  <ul class="releseDetails text-white">
+                      <li>
+                          {{movieObj.release_date}} </li>
+                       <li>  {{movieObj.adult ? "A" : 'U'}} </li> 
+                        <li>  {{movieObj.runtime}} </li>
+                     
+                         
+                  </ul>
+                  <p class="overview text-white">
+                      {{movieObj.overview}}
+                  </p>
+                  <p class="staring">
+                    
+                  </p>
+              </div>
+          
+              </div>
+             </div>
+     </div>
+    </div>
 </div>

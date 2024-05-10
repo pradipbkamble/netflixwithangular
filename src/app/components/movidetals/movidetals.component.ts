@@ -10,7 +10,7 @@ import { MoviesService } from 'src/app/service/movies.service';
 })
 export class MovidetalsComponent implements OnInit {
   moviesid!:string
-  moviobj!:any
+  movieObj!:any
   backgroundimg!:any
   constructor(private _moviser:MoviesService, private _route:ActivatedRoute) { }
 
@@ -19,8 +19,8 @@ this.moviesid=this._route.snapshot.params['moviId']
 console.log(this.moviesid);
 
 this._moviser.fetchsinglemovi(this.moviesid).subscribe(res=>{
-  this.moviobj=res
-  console.log(this.moviobj);
+  this.movieObj=res
+  console.log(this.movieObj);
   // this.backgroundimg='https://image.tmdb.org/t/p/original/'+this.moviobj?.backdrop_path||this.moviobj.poster_path
   
 })

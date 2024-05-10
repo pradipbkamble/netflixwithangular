@@ -1,23 +1,69 @@
-.moviimgmain{
-    .imgmovi{ width: 100%;
-    height: 1000px;
-    object-fit: cover;
+// .moviimgmain{
+//     .imgmovi{ width: 100%;
+        
+//     height: 300px;
+//     object-fit: cover;
+    
+//         width: 100%;
+//         height: 100vh;
+        
+//         background-position: center;
+//         background-size: cover;
+    
+       
+    
 
-    }
+//     }
    
-    .movi-caption{
-        position:absolute;
-        top: 5%;
-        left: 5%;
-        height: 100%;
-        width: 40%;
-        background-image: linear-gradient(93deg,black,transperent 85%,transperent);
-        h3{
-            font-size: 65px !important;
-            color: aliceblue;
-        }
-                }
+//     .movi-caption{
+//         position:absolute;
+//         top: 5%;
+//         left: 5%;
+//         height: 100%;
+//         width: 40%;
+//         background-image: linear-gradient(93deg,black,transperent 85%,transperent);
+//         h3{
+//             font-size: 65px !important;
+//             color: aliceblue;
+//         }
+//                 }
 
 
     
+// }
+.moviimgmain{
+    height: 100vh;
+        position: relative;
+         background-position: center;
+        background-size:cover;
+        
+        .movie512{
+         top: 0px;
+         background-image: linear-gradient(90deg,black,transperent 85%,transperent) !important;
+         position: absolute;
+        
+         
+     }
 }
+
+.movieProdLogo{
+    width: 300px;
+
+ }
+.movieTitle{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px;
+   
+    
+}
+.movieimg{
+    height: 100vh;
+    width: 100%;
+   position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
